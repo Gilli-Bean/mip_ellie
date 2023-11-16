@@ -7,6 +7,7 @@ extends CharacterBody2D
 @export_range(0.0, 1.0) var friction = 0.4
 @export_range(0.0, 1.0) var acceleration = 0.25
 @export_range(0.0, 1.0) var deceleration = 1.0
+@export var Knife : PackedScene
 
 var jumping = false
 #var attacking = false
@@ -25,6 +26,9 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_speed
 	
+	if Input.is_action_just_pressed("attack"):
+		attack()
+	
 	if velocity.length() > 0:
 		$AnimationPlayer.play("walk")
 	else:
@@ -33,21 +37,8 @@ func _physics_process(delta):
 	if velocity.x != 0:
 		transform.x.x = sign(velocity.x)
 	
-#jump
-func _input(event):
-	if event.is_action_pressed("jump"):
-		jump()
-	if event.is_action_pressed("attack"):
-		attack()
 
-func jump():
-	$AnimationPlayer.play("jump")
-	jumping = true
-	await $AnimationPlayer.animation_finished
-	jumping = false
-	
 func attack():
-	$AnimationPlayer.play("throwknife")
-	#attacking = true
-	#await $AnimationPlayer.animation_finished
-	#attacking = false
+	var k = Knife.instantiate()
+	add_child(k)
+	k.transform = $KnifeArm.global_transform
