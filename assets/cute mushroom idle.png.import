@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcphbg2my6brn"
-path="res://.godot/imported/knife.png-bff0496ee223572ce998ddfa2caff61d.ctex"
+uid="uid://6mmgi6f0dvkv"
+path="res://.godot/imported/cute mushroom idle.png-e355a8d9273901f91b60f2a075b14f69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/knife.png"
-dest_files=["res://.godot/imported/knife.png-bff0496ee223572ce998ddfa2caff61d.ctex"]
+source_file="res://assets/cute mushroom idle.png"
+dest_files=["res://.godot/imported/cute mushroom idle.png-e355a8d9273901f91b60f2a075b14f69.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3rwxgjupue18"
-path="res://.godot/imported/cute mushroom idle (1).png-045900c29a520745e5949e15a9489f91.ctex"
+path="res://.godot/imported/cute mushroom idle (1).png-9a085707bdf74834c393c043b73719e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/cute mushroom idle (1).png"
-dest_files=["res://.godot/imported/cute mushroom idle (1).png-045900c29a520745e5949e15a9489f91.ctex"]
+source_file="res://assets/cute mushroom idle (1).png"
+dest_files=["res://.godot/imported/cute mushroom idle (1).png-9a085707bdf74834c393c043b73719e7.ctex"]
 
 [params]
 

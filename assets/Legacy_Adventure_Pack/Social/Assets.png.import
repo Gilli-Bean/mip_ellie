@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://daftwbwkxqpn0"
-path="res://.godot/imported/Test.png-13ed290154ef3cad7d2e89bc55c10eee.ctex"
+uid="uid://b3bxxk0ei4qm"
+path="res://.godot/imported/Assets.png-d96b9e2572f314d58f5a2af6a13f2e89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Legacy_Adventure_Pack/Social/Test.png"
-dest_files=["res://.godot/imported/Test.png-13ed290154ef3cad7d2e89bc55c10eee.ctex"]
+source_file="res://assets/Legacy_Adventure_Pack/Social/Assets.png"
+dest_files=["res://.godot/imported/Assets.png-d96b9e2572f314d58f5a2af6a13f2e89.ctex"]
 
 [params]
 

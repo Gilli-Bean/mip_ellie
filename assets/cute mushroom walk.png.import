@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cceofibh2mol1"
-path="res://.godot/imported/cute mushroom walk.png-04e80eeeae434f10eb6107f20f3dc9a9.ctex"
+path="res://.godot/imported/cute mushroom walk.png-ea56dab0928ad9231c7c963293b3c58e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/cute mushroom walk.png"
-dest_files=["res://.godot/imported/cute mushroom walk.png-04e80eeeae434f10eb6107f20f3dc9a9.ctex"]
+source_file="res://assets/cute mushroom walk.png"
+dest_files=["res://.godot/imported/cute mushroom walk.png-ea56dab0928ad9231c7c963293b3c58e.ctex"]
 
 [params]
 
