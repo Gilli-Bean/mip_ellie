@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3rwxgjupue18"
-path="res://.godot/imported/cute mushroom idle (1).png-97b4fa3a797ee1d74ad3ea2abc612e35.ctex"
+uid="uid://bgjl8m3ndmier"
+path="res://.godot/imported/Character.png-d8aec542f048050e425cb0a7c5115c33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cute mushroom idle (1).png"
-dest_files=["res://.godot/imported/cute mushroom idle (1).png-97b4fa3a797ee1d74ad3ea2abc612e35.ctex"]
+source_file="res://art/Legacy_Adventure_Pack/Assets/Character.png"
+dest_files=["res://.godot/imported/Character.png-d8aec542f048050e425cb0a7c5115c33.ctex"]
 
 [params]
 

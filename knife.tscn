@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://br68norcrxkkp"]
 
 [ext_resource type="Script" path="res://knife.gd" id="1_snqi4"]
-[ext_resource type="Texture2D" uid="uid://dcphbg2my6brn" path="res://knife.png" id="1_yy4nx"]
+[ext_resource type="Texture2D" uid="uid://dcphbg2my6brn" path="res://art/knife.png" id="2_t3f5p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v8f0w"]
 size = Vector2(14, 4.5)
@@ -10,7 +10,7 @@ size = Vector2(14, 4.5)
 script = ExtResource("1_snqi4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_yy4nx")
+texture = ExtResource("2_t3f5p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7, 0.75)

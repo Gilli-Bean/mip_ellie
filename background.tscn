@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://smdxiq03h6jd"]
 
-[ext_resource type="Texture2D" uid="uid://ckfe08eyqu8f" path="res://Legacy_Adventure_Pack/Assets/Assets.png" id="1_rpxfo"]
+[ext_resource type="Texture2D" uid="uid://ckfe08eyqu8f" path="res://art/Legacy_Adventure_Pack/Assets/Assets.png" id="1_s55jw"]
 [ext_resource type="PackedScene" uid="uid://c2ppmu7aep5vj" path="res://ellie.tscn" id="2_p5xdt"]
 [ext_resource type="PackedScene" uid="uid://br68norcrxkkp" path="res://knife.tscn" id="3_ptrhm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpcs4"]
-texture = ExtResource("1_rpxfo")
+texture = ExtResource("1_s55jw")
 2:0/0 = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0

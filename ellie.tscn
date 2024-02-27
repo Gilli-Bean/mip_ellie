@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://c2ppmu7aep5vj"]
 
 [ext_resource type="Script" path="res://ellie.gd" id="1_gw8gq"]
-[ext_resource type="Texture2D" uid="uid://xgyd3l46k7tp" path="res://elliefinalart.png" id="2_2ixms"]
+[ext_resource type="Texture2D" uid="uid://xgyd3l46k7tp" path="res://art/elliefinalart.png" id="2_m8f40"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7tp1m"]
 size = Vector2(10.5, 2.25)
@@ -102,7 +102,7 @@ script = ExtResource("1_gw8gq")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-2.84217e-14, 7)
 scale = Vector2(0.5, 0.489583)
-texture = ExtResource("2_2ixms")
+texture = ExtResource("2_m8f40")
 hframes = 7
 vframes = 7
 

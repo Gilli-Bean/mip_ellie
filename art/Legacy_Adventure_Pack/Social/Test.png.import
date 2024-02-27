@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cceofibh2mol1"
-path="res://.godot/imported/cute mushroom walk.png-c1a2164dffd4d5bad602310497d83a76.ctex"
+uid="uid://daftwbwkxqpn0"
+path="res://.godot/imported/Test.png-13ed290154ef3cad7d2e89bc55c10eee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cute mushroom walk.png"
-dest_files=["res://.godot/imported/cute mushroom walk.png-c1a2164dffd4d5bad602310497d83a76.ctex"]
+source_file="res://art/Legacy_Adventure_Pack/Social/Test.png"
+dest_files=["res://.godot/imported/Test.png-13ed290154ef3cad7d2e89bc55c10eee.ctex"]
 
 [params]
 

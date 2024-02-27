@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcphbg2my6brn"
-path="res://.godot/imported/knife.png-3a05c28fdac703eeae0d97922cbb4a37.ctex"
+uid="uid://cceofibh2mol1"
+path="res://.godot/imported/cute mushroom walk.png-04e80eeeae434f10eb6107f20f3dc9a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://knife.png"
-dest_files=["res://.godot/imported/knife.png-3a05c28fdac703eeae0d97922cbb4a37.ctex"]
+source_file="res://art/cute mushroom walk.png"
+dest_files=["res://.godot/imported/cute mushroom walk.png-04e80eeeae434f10eb6107f20f3dc9a9.ctex"]
 
 [params]
 
