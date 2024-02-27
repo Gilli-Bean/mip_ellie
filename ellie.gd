@@ -10,7 +10,7 @@ extends CharacterBody2D
 @export var Knife : PackedScene
 
 var jumping = false
-#var attacking = false
+var attacking = false
 
 func _physics_process(delta):
 	velocity.y += gravity * delta
@@ -39,6 +39,10 @@ func _physics_process(delta):
 	
 
 func attack():
+	$AnimationPlayer.play("throwknife")
+	attacking = true
 	var k = Knife.instantiate()
-	add_child(k)
+	owner.add_child(k)
 	k.transform = $KnifeArm.global_transform
+	await $AnimationPlayer.animation_finished
+	attacking = false
