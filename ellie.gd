@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 @export var speed = 60
-@export var jump_speed = 20
+@export var jump_speed = -80
 @export var gravity = 130
 @export_range(0.0, 1.0) var friction = 0.4
 @export_range(0.0, 1.0) var acceleration = 0.25
@@ -29,7 +29,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("attack"):
 		attack()
 	
-	if velocity.length() > 0:
+	if velocity.length() > 0 and is_on_floor():
 		$AnimationPlayer.play("walk")
 	else:
 		$AnimationPlayer.play("notsureyet")
@@ -40,9 +40,9 @@ func _physics_process(delta):
 
 func attack():
 	$AnimationPlayer.play("throwknife")
-	attacking = true
+	#attacking = true
 	var k = Knife.instantiate()
 	owner.add_child(k)
 	k.transform = $KnifeArm.global_transform
-	await $AnimationPlayer.animation_finished
-	attacking = false
+	#await $AnimationPlayer.animation_finished
+	#attacking = false
