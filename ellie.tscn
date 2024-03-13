@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c2ppmu7aep5vj"]
+[gd_scene load_steps=15 format=3 uid="uid://c2ppmu7aep5vj"]
 
 [ext_resource type="Script" path="res://ellie.gd" id="1_gw8gq"]
 [ext_resource type="PackedScene" uid="uid://br68norcrxkkp" path="res://knife.tscn" id="2_vjcky"]
@@ -86,11 +86,77 @@ tracks/0/keys = {
 "values": [12, 15]
 }
 
+[sub_resource type="Animation" id="Animation_rh1br"]
+resource_name = "death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [85, 92]
+}
+
+[sub_resource type="Animation" id="Animation_m2nfv"]
+resource_name = "celebrate"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [48, 64]
+}
+
+[sub_resource type="Animation" id="Animation_bjdye"]
+resource_name = "placebridge"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [75, 81]
+}
+
+[sub_resource type="Animation" id="Animation_jb4a8"]
+resource_name = "climb"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [68, 71]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_83fc8"]
 _data = {
 "RESET": SubResource("Animation_lgsmi"),
+"celebrate": SubResource("Animation_m2nfv"),
+"climb": SubResource("Animation_jb4a8"),
+"death": SubResource("Animation_rh1br"),
 "jump": SubResource("Animation_wsfyg"),
 "notsureyet": SubResource("Animation_85alj"),
+"placebridge": SubResource("Animation_bjdye"),
 "throwknife": SubResource("Animation_4mu5a"),
 "walk": SubResource("Animation_mms5k")
 }
