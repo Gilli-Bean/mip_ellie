@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://c2ppmu7aep5vj"]
+[gd_scene load_steps=11 format=3 uid="uid://c2ppmu7aep5vj"]
 
 [ext_resource type="Script" path="res://ellie.gd" id="1_gw8gq"]
-[ext_resource type="Texture2D" uid="uid://xgyd3l46k7tp" path="res://assets/elliefinalart.png" id="2_b28lm"]
+[ext_resource type="PackedScene" uid="uid://br68norcrxkkp" path="res://knife.tscn" id="2_vjcky"]
+[ext_resource type="Texture2D" uid="uid://dcggc5eu1tsts" path="res://assets/elliefinalcharactersheet.png" id="3_ngqiu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7tp1m"]
 size = Vector2(10.5, 2.25)
@@ -98,13 +99,14 @@ _data = {
 collision_layer = 4
 collision_mask = 27
 script = ExtResource("1_gw8gq")
+Knife = ExtResource("2_vjcky")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-2.84217e-14, 7)
 scale = Vector2(0.5, 0.489583)
-texture = ExtResource("2_b28lm")
-hframes = 7
-vframes = 7
+texture = ExtResource("3_ngqiu")
+hframes = 10
+vframes = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.25, 15.125)

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm3aytarhejt2"]
+
+[ext_resource type="Texture2D" uid="uid://dnmlfl4phtw0n" path="res://assets/rabbitdraft.png" id="1_inqgv"]
+[ext_resource type="Script" path="res://rabbit.gd" id="1_yitce"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yvs6u"]
+size = Vector2(12, 11.5)
+
+[node name="Rabbit" type="CharacterBody2D"]
+script = ExtResource("1_yitce")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_inqgv")
+vframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0.75)
+shape = SubResource("RectangleShape2D_yvs6u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "IDLE"

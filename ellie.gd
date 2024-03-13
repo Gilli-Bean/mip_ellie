@@ -3,12 +3,15 @@ extends CharacterBody2D
 
 @export var speed = 60
 @export var jump_speed = -80
-@export var gravity = 130
+@export var gravity = 170
 @export_range(0.0, 1.0) var friction = 0.4
 @export_range(0.0, 1.0) var acceleration = 0.25
 @export_range(0.0, 1.0) var deceleration = 1.0
 @export var Knife : PackedScene
+@export var cooldown = 2.25
 
+
+var can_attack = true
 var jumping = false
 var attacking = false
 
@@ -37,6 +40,12 @@ func _physics_process(delta):
 	if velocity.x != 0:
 		transform.x.x = sign(velocity.x)
 	
+func _ready():
+	start()
+
+func start():
+	$KnifeCooldown.wait_time = cooldown
+
 
 func attack():
 	$AnimationPlayer.play("throwknife")
