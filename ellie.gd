@@ -10,12 +10,23 @@ extends CharacterBody2D
 @export var Knife : PackedScene
 @export var cooldown = 2.25
 
+@export var climbing = false
 
 var can_attack = true
 var jumping = false
 var attacking = false
 
 func _physics_process(delta):
+	if climbing == false:
+		velocity.y += gravity
+	elif climbing == true:
+		velocity.y = 0
+		if Input.is_action_pressed("up"):
+			velocity.y = -speed
+		if Input.is_action_pressed("down"):
+			velocity.y = speed
+	
+	
 	velocity.y += gravity * delta
 	
 	var dir = Input.get_axis("left", "right")
@@ -40,11 +51,6 @@ func _physics_process(delta):
 	if velocity.x != 0:
 		transform.x.x = sign(velocity.x)
 	
-func _ready():
-	start()
-
-func start():
-	$KnifeCooldown.wait_time = cooldown
 
 
 func attack():

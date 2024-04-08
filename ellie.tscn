@@ -95,7 +95,7 @@ _data = {
 "walk": SubResource("Animation_mms5k")
 }
 
-[node name="ellie" type="CharacterBody2D"]
+[node name="ellie" type="CharacterBody2D" groups=["Climber"]]
 collision_layer = 4
 collision_mask = 27
 script = ExtResource("1_gw8gq")
