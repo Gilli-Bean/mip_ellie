@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://smdxiq03h6jd"]
+[gd_scene load_steps=7 format=3 uid="uid://smdxiq03h6jd"]
 
 [ext_resource type="Texture2D" uid="uid://ckfe08eyqu8f" path="res://assets/Legacy_Adventure_Pack/Assets/Assets.png" id="1_m5qww"]
 [ext_resource type="PackedScene" uid="uid://c2ppmu7aep5vj" path="res://ellie.tscn" id="2_p5xdt"]
 [ext_resource type="PackedScene" uid="uid://br68norcrxkkp" path="res://knife.tscn" id="3_ptrhm"]
+[ext_resource type="PackedScene" uid="uid://bm3aytarhejt2" path="res://rabbit.tscn" id="4_kivl6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpcs4"]
 texture = ExtResource("1_m5qww")
@@ -1166,4 +1167,6 @@ layer_0/tile_data = PackedInt32Array(1, 1310720, 3, 65537, 1114112, 4, 131073, 1
 
 [node name="ellie" parent="." instance=ExtResource("2_p5xdt")]
 
-[node name="Knife" parent="." instance=ExtResource("3_ptrhm")]
+[node name="Knife" parent="ellie" instance=ExtResource("3_ptrhm")]
+
+[node name="Rabbit" parent="." instance=ExtResource("4_kivl6")]

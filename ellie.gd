@@ -8,12 +8,13 @@ extends CharacterBody2D
 @export_range(0.0, 1.0) var acceleration = 0.25
 @export_range(0.0, 1.0) var deceleration = 1.0
 @export var Knife : PackedScene
-@export var cooldown = 2.25
+
 
 
 var can_attack = true
 var jumping = false
 var attacking = false
+var cooldown = 2.25
 
 func _physics_process(delta):
 	velocity.y += gravity * delta
@@ -55,3 +56,6 @@ func attack():
 	k.transform = $KnifeArm.global_transform
 	#await $AnimationPlayer.animation_finished
 	#attacking = false
+
+func _on_knife_cooldown_timeout():
+	can_attack = true
